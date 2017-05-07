@@ -2,7 +2,6 @@
 
 namespace RawMaterialManager\Http\Controllers\Admin;
 
-use Illuminate\Http\Request;
 use RawMaterialManager\Http\Controllers\Controller;
 
 class AdminHomeController extends Controller

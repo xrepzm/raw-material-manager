@@ -77,7 +77,7 @@ return [
 
         'admins' => [
             'driver' => 'eloquent',
-            'model' => RawMaterialManager\Admin::class,
+            'model' => RawMaterialManager\AdminUser::class,
         ],
 
         // 'users' => [

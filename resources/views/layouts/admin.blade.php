@@ -42,12 +42,12 @@
         <!-- Right Side Of Navbar -->
         <ul class="nav navbar-nav justify-content-end">
           <!-- Authentication Links -->
-          @if (auth()->guest())
+          @if (auth('admin')->guest())
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('login') }}">Login</a>
+              <a class="nav-link" href="{{ route('admin.login') }}">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{{ route('register') }}">Register</a>
+              <a class="nav-link" href="{{ route('admin.register') }}">Register</a>
             </li>
           @else
             <li class="nav-item dropdown">
@@ -58,7 +58,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                {{ auth()->user()->name }}
+                {{ auth('admin')->user()->name }}
               </a>
 
               <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

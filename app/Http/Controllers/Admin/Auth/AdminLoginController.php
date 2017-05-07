@@ -15,7 +15,7 @@ class AdminLoginController extends Controller
     public function __construct()
     {
         $this->middleware('auth.admin.redirect')->only('showLoginForm');
-        $this->middleware('guest:auth.admin')->except('logout');
+        // $this->middleware('guest:auth.admin')->except('logout');
     }
 
     public function showLoginForm()
